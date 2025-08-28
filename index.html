@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gupta Coder Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 60px 20px 20px;
+    }
+
+    /* Gupta Coder Hub heading */
+    header h1 {
+      font-size: 4.5rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+      text-shadow: 0 0 20px rgba(255,255,255,0.5);
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 20px #ff00cc, 0 0 40px #3333ff; }
+      to { text-shadow: 0 0 40px #00ffcc, 0 0 60px #ff00cc; }
+    }
+
+    /* Tagline */
+    header h2 {
+      font-size: 2rem;
+      margin-top: 10px;
+      font-weight: 700;
+      color: #ffde59;
+      text-shadow: 0 0 15px #ffde59;
+    }
+
+    /* Navigation */
+    nav {
+      margin: 20px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    /* About Section */
+    #about {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    /* Services Section */
+    #services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .service-box {
+      flex: 1 1 18%;
+      min-width: 200px;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.4s;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .service-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #00ffcc, 0 0 40px #ff00cc;
+    }
+    .service-box h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #00ffcc;
+    }
+    .service-box p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    /* Contact Section */
+    #contact {
+      max-width: 800px;
+      margin: auto;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #ff00cc, #00ffcc);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #00ffcc, #ff00cc);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GUPTA CODER HUB</h1>
+    <h2>We Build Digital Dreams 🚀</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <b>Gupta Coder Hub</b> – where creativity meets technology.  
+      We are passionate developers who design and build modern websites, 
+      mobile apps, and powerful software solutions.  
+      Our goal is simple: to turn your ideas into digital reality with innovation, precision, and style.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="service-box">
+      <h3>Website Development</h3>
+      <p>Modern, responsive, and user-friendly websites tailored to your business needs.</p>
+    </div>
+    <div class="service-box">
+      <h3>Mobile App Development</h3>
+      <p>Scalable Android & iOS apps with sleek UI/UX for global audiences.</p>
+    </div>
+    <div class="service-box">
+      <h3>Custom Software Solutions</h3>
+      <p>Tailor-made tools & software to streamline your business operations.</p>
+    </div>
+    <div class="service-box">
+      <h3>Multi-Language Development</h3>
+      <p>Build platforms that speak 26+ languages to connect with the world.</p>
+    </div>
+    <div class="service-box">
+      <h3>Digital Innovation Consulting</h3>
+      <p>Expert guidance to grow & innovate your business in the digital age.</p>
+    </div>
+  </section>
+
+<!-- 🌟 Contact Section -->
+<section id="contact" class="py-20 bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- Left Side: Contact Info -->
+    <div class="space-y-6">
+      <h2 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 drop-shadow-lg">
+        Contact Us 📩
+      </h2>
+      <p class="text-lg text-gray-300">
+        Have an idea or project in mind? Let’s bring it to life together!  
+        You can call, email, or just send us a quick message using the form.
+      </p>
+      <div class="space-y-3">
+        <p><strong>Email:</strong> 
+          <a href="mailto:guptacoderhub@gmail.com" class="text-purple-400 hover:underline">guptacoderhub@gmail.com</a>
+        </p>
+        <p><strong>Phone:</strong> 
+          <a href="tel:+919334832880" class="text-purple-400 hover:underline">+91 9334832880</a>
+        </p>
+        <p><strong>Founder:</strong> Anshu Kumar Gupta</p>
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="bg-gray-800/50 backdrop-blur-md p-8 rounded-2xl shadow-2xl border border-gray-700">
+      <h3 class="text-2xl font-bold mb-6 text-center">Send a Message ✨</h3>
+      <form action="https://formsubmit.co/guptacoderhub@gmail.com" method="POST" class="space-y-4">
+        
+        <!-- Hidden settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Message from Gupta Coder Hub Website!">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- Input Fields -->
+        <input type="text" name="name" placeholder="Your Name" required 
+          class="w-full p-3 rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400">
+        
+        <input type="email" name="email" placeholder="Your Email" required 
+          class="w-full p-3 rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400">
+        
+        <textarea name="message" placeholder="Your Message" required rows="4"
+          class="w-full p-3 rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+        
+        <!-- Submit Button -->
+        <button type="submit" 
+          class="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-105 transition-transform duration-300 text-white py-3 rounded-xl font-semibold shadow-lg">
+          🚀 Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
